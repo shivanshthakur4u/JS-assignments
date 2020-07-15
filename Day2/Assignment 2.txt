@@ -1,0 +1,41 @@
+A.To add/remove elements:
+
+1.push(...items) – adds items to the end,
+
+2.pop() – extracts an item from the end,
+
+3.shift() – extracts an item from the beginning,
+
+4.unshift(...items) – adds items to the beginning.
+
+5.splice(pos, deleteCount, ...items) – at index pos delete deleteCount elements and insert items.
+
+6.slice(start, end) – creates a new array, copies elements from position start till end (not inclusive) into it.
+
+7.concat(...items) – returns a new array: copies all members of the current one and adds items to it. If any of items is an array, then its elements are taken.
+
+B.To search among elements:
+
+1.indexOf/lastIndexOf(item, pos) – look for item starting from position pos, return the index or -1 if not found.
+
+2.includes(value) – returns true if the array has value, otherwise false.
+
+3.find/filter(func) – filter elements through the function, return first/all values that make it return true.
+
+4.findIndex is like find, but returns the index instead of a value.
+
+C.To iterate over elements:
+
+1.forEach(func) – calls func for every element, does not return anything.
+
+D.To transform the array:
+
+1.map(func) – creates a new array from results of calling func for every element.
+
+2.sort(func) – sorts the array in-place, then returns it.
+
+3.reverse() – reverses the array in-place, then returns it.
+
+4.split/join – convert a string to array and back.
+
+5.reduce(func, initial) – calculate a single value over the array by calling func for each element and passing an intermediate result between the calls.
