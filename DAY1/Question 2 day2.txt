@@ -1,0 +1,31 @@
+1.var – Can be re-assigned, re-defined and has a function-scope. When declared outside the function, it has a global scope and attaches itself to the window object.
+example 1:(scope within the function)
+function begin () {
+ for (var i=0; i<5; i++) {
+  console.log(i) 
+ }
+// i is accessible outside the for loop
+ console.log(i)
+}
+example 2:(global scope)
+var name = 'Saurabh';
+
+2.let – Can be re-assigned. It’s scope is within a block of code.
+example 1:(scope not outside the for)
+
+function begin () {
+ for (let i=0; i<5; i++) {
+  console.log(i) 
+ }
+// i is not defined and will return an error
+ console.log(i)
+}
+
+3.const – Cannot be re-assigned or re-defined. It’s scope is within a block of code.
+example 1:
+
+const name = 'Aditi';
+let age = 25;
+age = 27;
+// cannot re-assign name. will throw error
+name = 'Avashya';

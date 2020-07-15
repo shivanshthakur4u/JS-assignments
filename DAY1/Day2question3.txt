@@ -1,0 +1,36 @@
+A.Primitive Data Types::
+
+1.String
+2.Number
+3.Boolean
+4.Null
+5.Undefined
+
+B.Non-primitive Data Type::
+
+1.Object
+2.Date
+3.Array
+
+JavaScript is a dynamic or loosely-typed language because a variable can hold value of any data type at any point of time.
+
+There are five types of primitive data types in JavaScript. They are as follows:
+
+
+1.String:represents sequence of characters e.g. "hello"
+
+2.Number:represents numeric values e.g. 100
+
+3.Boolean:represents boolean value either false or true
+
+4.Undefined:represents undefined value
+
+5.Null:represents null i.e. no value at all
+
+Non-primitive Data type
+
+1.Object:represents instance through which we can access members
+
+2.Array:represents group of similar values
+
+3.RegExp:represents regular expression
