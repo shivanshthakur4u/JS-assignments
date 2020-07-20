@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="" content="">
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript" charset="utf-8">
+            
+var choose=prompt("Press: \n 1. Addition \n 2.Substraction \n 3. Multiplication \n 4. Division  \n 5.Square-root \n 6.Percentage")
+
+function add(a,b)
+{
+    var a =Number(prompt("Enter the first number"));
+var b =Number(prompt("Enter the second number"));
+
+console.log(`The Addition of ${a} and ${b} is: ${a+b}` );
+}
+function sub(a,b)
+{
+var a =Number(prompt("Enter the first number"));
+var b =Number(prompt("Enter the second number"));
+
+console.log(`The Substraction of ${a} and ${b} is: ${a-b}` );
+
+}
+function mul(a,b)
+{
+var a = Number(prompt("Enter the first number"));
+var b = Number(prompt("Enter the second number"));
+
+console.log(`The Multiplication of ${a} and ${b} is: ${a*b}` );
+}
+function div(a,b)
+{
+var a =Number(prompt("Enter the first number"));
+var b =Number(prompt("Enter the second number"));
+
+console.log(`The Division of ${a} by ${b} is: ${a/b}` );
+}
+function sqrt(a)
+{
+var a =Number(prompt("Enter the  number"));
+
+console.log(`The Square-root of ${a} is: ${a**2}` );
+}
+function percentage()
+{
+var a =Number(prompt("Enter the obtained number"));
+var b =Number(prompt("Enter the Total number"));
+   
+console.log(`The Percentage is: ${(a/b)*100} % ` );
+}
+if (choose==1)
+{
+    add();
+}
+else if (choose==2)
+{
+    sub();
+}
+else if (choose==3)
+{
+    mul();
+}
+else if (choose==4)
+{
+    div();
+   
+}
+else if(choose==5)
+{
+    sqrt();
+}
+else
+{
+    percentage();
+}
+        </script>
+    </body>
+</html>
