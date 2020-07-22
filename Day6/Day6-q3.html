@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="" content="">
+        <title></title>
+<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+var user=prompt("Enter your Name");
+document.write(`Welcome ${user} Have a great day`);
+function myFunction()
+{
+    var element=document.body;
+    element.classList.toggle("dark-mode");
+}
+</script>
+
+    </head>
+    
+<body onload="startTime()">
+
+<div id="txt"></div>
+<h2>Toggle Dark/Light Mode</h2>
+<p>Click the button to toggle between dark and light mode for this page.</p>
+
+<button onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+
+    </body>
+</html>
