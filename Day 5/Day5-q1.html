@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="" content="">
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript" charset="utf-8">
+        
+n = parseInt(prompt("Please enter a positive number"));
+let arr = [ ];
+   for (let i = 1; i <= n; i++) {
+       arr.push(i)
+    }
+        
+   let arr1 = arr.filter((n)=>n%2!==0).map((n)=>n**3)
+   console.log(arr1);
+        </script>
+    </body>
+</html>

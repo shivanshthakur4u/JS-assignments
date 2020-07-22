@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="" content="">
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript" charset="utf-8">
+            class User{
+                constructor(name,age,email)
+                {
+                    this.name=name;
+                    this.age=age;
+                    this.email=email;
+                    
+                }
+                login()
+                {
+                    console.log(`${this.name} logged in`);
+                },
+                logout()
+                {
+                    console.log(`${this.name} logged out`);
+                }
+            }
+                 let user=new user (`Dilip`,25,`dilip@gmail.com`)
+                 
+                 class Moderator extends user
+                 {
+                     constructor(name,age,email,role)
+                     {
+                         super (name,age,email)
+                         this.role='Moderator';
+                     }
+                 }
+                 delete User(User)
+                 {
+                     users=user.filter(U)=>{
+                         return u.email!=user.email
+                         
+                     }
+                 }
+    class Admin extends Moderator
+    {
+        addCourse(User,Course)
+        {
+            User.Courses.push(course);
+            console.log(`User has added${Course}`);
+            return this;
+        }
+            
+             delete course(User,Course)
+             {
+                 User.Courses=User.Courses.filter(Courses=>Courses!==course);
+                 return this;
+             }
+            
+        }
+    
+            
+            
+            
+        </script>
+    </body>
+</html>
